@@ -1,27 +1,52 @@
 body {
-  background-color: rgb(230, 226, 175);
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(189, 212, 222);
+  text-align: center;
 }
+
+.container {
+  background-color: rgba(239, 239, 239, .8);
+  width: auto;
+  height: auto;
+}
+
 
 .header {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  height: auto;
+  height: 608px;
+  background-image: url(/images/insta.jpg);
 }
 
+
+
 div {
-  height: 30em;
-  border: 1px rgb(167, 163, 126) solid;
-  background-color: rgb(239, 236, 202);
+  margin-bottom: -25px;
+  height: 608px;
+}
+
+#projects_div {
+  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(/images/insta2.jpg);
+}
+
+#skills_div {
+    background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(/images/insta5.jpg);
+    background-position: bottom;
+}
+
+#contact_div {
+  padding-top: 100px;
+    background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(/images/insta3.jpg);
 }
 
 h1 {
-  color: rgb(0, 47, 47);
+  color: rgb(63, 87, 101);
 }
 
 a {
-  color: rgb(4, 99, 128);
+  color: rgb(43, 58, 66);
 }
 
 #face {
@@ -40,7 +65,7 @@ li {
 }
 
 
-
+/*POP UPS BELOW*/
 
 /*
 a.selected {
