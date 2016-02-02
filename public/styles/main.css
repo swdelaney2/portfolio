@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(230, 226, 175);
+}
+
 .header {
   width: 100%;
   margin-left: auto;
@@ -8,7 +12,16 @@
 
 div {
   height: 30em;
-  border: 1px black solid;
+  border: 1px rgb(167, 163, 126) solid;
+  background-color: rgb(239, 236, 202);
+}
+
+h1 {
+  color: rgb(0, 47, 47);
+}
+
+a {
+  color: rgb(4, 99, 128);
 }
 
 #face {
