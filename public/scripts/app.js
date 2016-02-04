@@ -11,35 +11,18 @@ $('.anchor').click(function(){
 
 // http://stackoverflow.com/questions/1328723/how-to-generate-a-simple-popup-using-jquery
 
-
-function deselect(e) {
-  $('.pop').slideFadeToggle(function() {
-    e.removeClass('selected');
-  });
-}
-
-$(function() {
-  $('#buddybeats_expand, #copychef_expand, #runningm8_expand').on('click', function() {
-    if($(this).hasClass('selected')) {
-      deselect($(this));
-    } else {
-      $(this).addClass('selected');
-      console.log(this.id);
-      // console.log('testing');
-      $('.buddybeats').slideFadeToggle();
-    }
-    return false;
-  });
-
-  $('.close').on('click', function() {
-    deselect($('.buddybeats'));
-    return false;
-  });
+$('#buddybeats_expand, #copychef_expand, #runningm8_expand').click(function(){
+  console.log(this);
+  console.log(this.id + '_content');
+  $('.' + this.id + '_content').show()
 });
 
-$.fn.slideFadeToggle = function(easing, callback) {
-  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
-};
+$('.close').click(function(){
+  console.log('close clicked');
+  $('.buddybeats_expand_content, .copychef_expand_content, .runningm8_expand_content').hide()
+});
+
+
 
 
 }); // end of onload
