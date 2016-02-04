@@ -170,11 +170,20 @@ figure{
   overflow: hidden;
   position: relative;
   display: inline-block;
+  /*float: left;*/
   vertical-align: top;
   border: 5px solid #fff;
   box-shadow: 0 0 5px #ddd;
-  margin: 1em;
+  /*margin: 1em;*/
+  margin-left: 1em auto;
+  margin-right: 1em auto;
+
 }
+
+/*#figure_three {
+  float: none;
+  display: inline-block;
+}*/
 
 figcaption{
   position: absolute;
