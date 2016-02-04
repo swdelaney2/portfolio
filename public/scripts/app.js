@@ -19,18 +19,20 @@ function deselect(e) {
 }
 
 $(function() {
-  $('#contact').on('click', function() {
+  $('#buddybeats_expand, #copychef_expand, #runningm8_expand').on('click', function() {
     if($(this).hasClass('selected')) {
       deselect($(this));
     } else {
       $(this).addClass('selected');
-      $('.pop').slideFadeToggle();
+      console.log(this.id);
+      // console.log('testing');
+      $('.buddybeats').slideFadeToggle();
     }
     return false;
   });
 
   $('.close').on('click', function() {
-    deselect($('#contact'));
+    deselect($('.buddybeats'));
     return false;
   });
 });
