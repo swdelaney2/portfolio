@@ -7,6 +7,7 @@
 
     <script type="text/javascript" src="./scripts/app.js"></script>
     <link rel="stylesheet" href="/styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     <title>Stephen Delaney | Online Portfolio</title>
   </head>
@@ -14,22 +15,23 @@
     <div class="header">
       <div class="container">
 
+
       <h1>Stephen Delaney | Online Portfolio</h1>
       <img id="face" src="./images/wdi_cropped.png">
       <p>
-      <ul>
-        <li><a href="https://github.com/swdelaney2" target="_blank" class="icon"><img src="./images/GitHub-Mark-32px.png"></a></li>
-        <li><a href="https://www.linkedin.com/in/swdelaney2" target="_blank" class="icon"><img src="./images/In-Black-34px-R.png"></a></li>
+      <ul class="header_list_ul">
+        <li class="header_list_li"><a href="https://github.com/swdelaney2" target="_blank" class="icon"><img src="./images/GitHub-Mark-32px.png"></a></li>
+        <li class="header_list_li"><a href="https://www.linkedin.com/in/swdelaney2" target="_blank" class="icon"><img src="./images/In-Black-34px-R.png"></a></li>
       </ul>
 
 
 
 <p>
 
-  <ul>
-    <li><a href="#Projects" class="anchor">PROJECTS</a></li>
-    <li><a href="#Skills" class="anchor">SKILLS</a></li>
-    <li><a href="#Contact" class="anchor">CONTACT</a></li>
+  <ul class="header_list">
+    <li class="header_list_li"><a href="#Projects" class="anchor">PROJECTS</a></li>
+    <li class="header_list_li"><a href="#Skills" class="anchor">SKILLS</a></li>
+    <li class="header_list_li"><a href="#Contact" class="anchor">CONTACT</a></li>
   </ul>
 </div>
 </div>
@@ -38,22 +40,72 @@
       <div id="projects_div">
         <a id="Projects"></a>
         <h1>Projects</h1>
+
+        <!-- <a href="#" id="contact">BuddyBeats</a> -->
+        <div class="thumbnail_container">
+          <a href="#" id="contact">
+
+         <figure>
+           <img src="./images/BuddyBeats3_c.png" alt="Thumb" width="400" height="300" />
+           <figcaption><div class="figcaption_div">BuddyBeats</div></figcation>
+         </figure></a>
+
       <p>Coming soon! Visit <a href="http://bit.ly/BuddyBeats" target="_blank">BuddyBeats</a> in the interim!
 
-        <!-- <p>
+        <p>
           <div class="messagepop pop">
             info about buddybeats
       <a class="close" href="/">Close</a>
       </div>
 
-      <a href="#" id="contact">BuddyBeats</a> -->
       </div>
-
+    </div>
 
     <div id="skills_div">
       <a id="Skills"></a>
       <h1>Skills</h1>
-    <p>Coming soon!
+    <p>
+      <table>
+        <tr>
+          <td style="text-align:center"><strong>Core Languages Learned:</strong></td>
+          <td></td>
+          <td style="text-align:center"><strong>Related Skills:</strong></td>
+        </tr>
+        <tr>
+          <td>
+            <ul id="skills_list">
+              <li>HTML5</li>
+              <li>CSS/Sass</li>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>Ruby</li>
+            </ul>
+          </td>
+          <td></td>
+          <td>
+            <ul id="skills_list">
+              <li>Active Record</li>
+              <li>Ajax</li>
+              <li>Backbone.js</li>
+              <li>Bootstrap</li>
+              <li>Express.js</li>
+              <li>Handlebars.js</li>
+              <li>jQuery UI</li>
+              <li>MongoDB</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+              <li>Rake</li>
+              <li>Ruby on Rails</li>
+              <li>Servers</li>
+              <li>Sinatra</li>
+              <li>Underscore.js</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <p><div class="container">
+        For more information, please download my resume or visit my <a href="https://profiles.generalassemb.ly/profiles/stephen-delaney" target="_blank">General Assembly profile</a>.
+      </div>
     </div>
 
 

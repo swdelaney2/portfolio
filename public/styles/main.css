@@ -3,6 +3,20 @@ body {
   margin: 0px;
   background-color: rgb(189, 212, 222);
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+  display:inline-table;
+}
+
+#skills_list {
+  margin-left: -20px;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
 }
 
 .container {
@@ -28,6 +42,11 @@ body {
 div {
   margin-bottom: -25px;
   height: 608px;
+}
+
+.figcaption_div {
+  margin-bottom: 0px;
+  height: auto;
 }
 
 #projects_div {
@@ -60,13 +79,21 @@ a {
   display: inline;
 }
 
-ul {
+.header_list_ul {
   display: inline;
 }
 
-li {
+.header_list_li {
   display: inline;
   padding: 1em;
+}
+
+/*li {
+  display: inline;
+}*/
+
+ul {
+    list-style-position: inside;
 }
 
 
@@ -111,3 +138,98 @@ a.selected {
   margin: 8px 0;
   padding-bottom: 8px;
 }*/
+
+
+/*http://codepen.io/larrygeams/pen/dBDLh*/
+*, *::before, *::after{
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.thumbnail_container{
+  width: 1024px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.hero{
+  width: 100%;
+  height: 40%;
+  background: #3498db;
+  display: table;
+}
+
+figure{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ddd;
+  margin: 1em;
+}
+
+figcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+figcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  color: #2c3e50;
+  /*text-transform: uppercase;*/
+}
+
+figcaption div:after{
+  position: absolute;
+  content: "";
+  left: 0; right: 0;
+  bottom: 40%;
+  text-align: center;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: #2c3e50;
+}
+
+figure img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+figure:hover figcaption{
+ background: rgba(255,255,255,0.3);
+}
+
+figcaption:hover div{
+  opacity: 1;
+  top: 0;
+}
+
+figcaption:hover div:after{
+  width: 50%;
+}
+
+figure:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}

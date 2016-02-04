@@ -9,3 +9,7 @@ set :public, File.expand_path('../public', __FILE__)
 get '/' do
   erb :index
 end
+
+get '/test' do
+  erb :test
+end
