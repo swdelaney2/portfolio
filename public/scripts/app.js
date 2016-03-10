@@ -26,3 +26,10 @@ $('.close').click(function(){
 
 
 }); // end of onload
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+  $('.buddybeats_expand_content, .copychef_expand_content, .runningm8_expand_content').hide();
+  window.location.replace("#Projects");
+   }
+ });
