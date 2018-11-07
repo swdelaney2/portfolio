@@ -57,7 +57,7 @@ div {
 
 #work_div {
   padding-top: 2em;
-  height: 900px;
+  height: 1200px;
   background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(../images/insta2.jpg);
   background-size: cover;
 }
@@ -174,20 +174,13 @@ figure{
   overflow: hidden;
   position: relative;
   display: inline-block;
-  /*float: left;*/
   vertical-align: top;
   border: 5px solid #fff;
   box-shadow: 0 0 5px #ddd;
-  /*margin: 1em;*/
   margin-left: 1em auto;
   margin-right: 1em auto;
 
 }
-
-/*#figure_three {
-  float: none;
-  display: inline-block;
-}*/
 
 figcaption{
   position: absolute;
@@ -208,7 +201,6 @@ figcaption div{
   top: 20px;
   opacity: 0;
   color: #2c3e50;
-  /*text-transform: uppercase;*/
 }
 
 figcaption div:after{
