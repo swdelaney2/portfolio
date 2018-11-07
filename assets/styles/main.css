@@ -179,7 +179,14 @@ figure{
   box-shadow: 0 0 5px #ddd;
   margin-left: 1em auto;
   margin-right: 1em auto;
+}
 
+.example_thumbs {
+  min-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 figcaption{
@@ -239,3 +246,29 @@ figure:hover img{
   -webkit-transform: scale3d(1.2, 1.2, 1);
           transform: scale3d(1.2, 1.2, 1);
 }
+
+
+
+@media (max-width: 975px) {
+  figure{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  }
+@media (max-width: 875px) {
+  figure{
+    width: 300px;
+  }
+  }
+
+  @media (max-width: 675px) {
+    figure{
+      width: 250px;
+      height: 188px;
+    }
+
+
+    #work_div {
+      height: 1300px;
+    }
+  }
