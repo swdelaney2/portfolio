@@ -1,84 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!-- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/app.js"></script>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <title>Stephen Delaney | Online Portfolio</title>
+</head>
 
-    <script type="text/javascript" src="./scripts/app.js"></script>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-    <title>Stephen Delaney | Online Portfolio</title>
-  </head>
-  <body>
-    <div class="header">
-      <div class="container">
-
-
+<body>
+  <div class="header">
+    <div class="container">
       <h1>Stephen Delaney | Online Portfolio</h1>
-      <img id="face" src="./images/wdi_cropped.png">
+      <img id="face" src="assets/images/wdi_cropped.png">
       <p>
-      <ul class="header_list_ul">
-        <li class="header_list_li"><a href="https://github.com/swdelaney2" target="_blank" class="icon"><img src="./images/GitHub-Mark-32px.png"></a></li>
-        <li class="header_list_li"><a href="https://www.linkedin.com/in/swdelaney2" target="_blank" class="icon"><img src="./images/In-Black-34px-R.png"></a></li>
-      </ul>
+        <ul class="header_list_ul">
+          <li class="header_list_li"><a href="https://github.com/swdelaney2" target="_blank" class="icon"><img src="assets/images/github.png"></a></li>
+          <li class="header_list_li"><a href="https://www.linkedin.com/in/swdelaney2" target="_blank" class="icon"><img src="assets/images/linkedin.png"></a></li>
+          <li class="header_list_li"><a href="https://twitter.com/StephenCodes" target="_blank" class="icon"><img src="assets/images/twitter.png"></a></li>
+        </ul>
+      <p>
+        <ul class="header_list">
+          <li class="header_list_li"><a href="#Work" class="anchor">WORK SAMPLES</a></li>
+          <li class="header_list_li"><a href="#Projects" class="anchor">GENERAL ASSEMBLY PROJECTS</a></li>
+          <li class="header_list_li"><a href="#Skills" class="anchor">SKILLS</a></li>
+          <li class="header_list_li"><a href="#Contact" class="anchor">CONTACT</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
 
+  <div id="work_div">
+    <a id="Work"></a>
+    <h1>Work Samples</h1>
 
+  </div>
 
-<p>
-
-  <ul class="header_list">
-    <li class="header_list_li"><a href="#Projects" class="anchor">PROJECTS</a></li>
-    <li class="header_list_li"><a href="#Skills" class="anchor">SKILLS</a></li>
-    <li class="header_list_li"><a href="#Contact" class="anchor">CONTACT</a></li>
-  </ul>
-</div>
-</div>
-
-
-      <div id="projects_div">
-        <a id="Projects"></a>
-        <h1>Projects</h1>
-
-        <!-- <a href="#" id="contact">BuddyBeats</a> -->
-
-
-        <div class="thumbnail_container">
-
-
-          <a href="#" id="buddybeats_expand">
+  <div id="projects_div">
+    <a id="Projects"></a>
+    <h1>General Assembly Projects</h1>
+    <div class="thumbnail_container">
+      <a href="#" id="buddybeats_expand">
          <figure>
-           <img src="./images/BuddyBeats3_c.png" alt="Thumb" width="400" height="300" />
+           <img src="assets/images/BuddyBeats3_c.png" alt="Thumb" width="400" height="300" />
            <figcaption><div class="figcaption_div">BuddyBeats</div></figcation>
-         </figure></a>
-
-         <a href="#" id="copychef_expand">
-        <figure>
-          <img src="./images/CopyChef-2_b.png" alt="Thumb" width="400" height="300" />
-          <figcaption><div class="figcaption_div">CopyChef</div></figcation>
-        </figure></a>
-
-        <a href="#" id="runningm8_expand">
-       <figure>
-         <img src="./images/Running_M8-2b.png" alt="Thumb" width="400" height="300" />
-         <figcaption><div class="figcaption_div">RunningM8</div></figcation>
-       </figure></a>
+         </figure>
+       </a>
+       <a href="#" id="copychef_expand">
+         <figure>
+           <img src="assets/images/CopyChef-2_b.png" alt="Thumb" width="400" height="300" />
+           <figcaption><div class="figcaption_div">CopyChef</div></figcation>
+         </figure>
+       </a>
+       <a href="#" id="runningm8_expand">
+         <figure>
+           <img src="assets/images/Running_M8-2b.png" alt="Thumb" width="400" height="300" />
+           <figcaption><div class="figcaption_div">RunningM8</div></figcation>
+          </figure>
+        </a>
       </div>
 
-
-
       <div class="buddybeats_expand_content">
-        <a class="close" href="#Projects"><img src="./images/x-icon1.gif" id="x_icon"></a>
+        <a class="close" href="#Projects"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
         <p><h1>BuddyBeats</h1>
         <p><a href="http://bit.ly/BuddyBeats" target="_blank">BuddyBeats</a> is an application to help you make YouTube and Spotify playlists with your friends, helpful for everything from deciding on the music at your wedding to ensuring crowd-pleasing hits at your holiday party.
-
         <p>This was my final project for GA and it was truly fun to make. The core functionality took less time than I expected, so I had more time than usual to tweak and optimize the site, adding in new features and playing around. In fact, I had never intended to add Spotify at all.
-
         <p>I am really proud of how it turned out. It is an easy-to-use application and for a YouTube and playlist addict like myself, it provides a great tool that YouTube itself does not provide.
 
-          <p><strong>Technologies Used:</strong>
-
+        <p><strong>Technologies Used:</strong>
           <ul>
             <li>Active Record</li>
             <li>Bootstrap</li>
@@ -89,35 +79,34 @@
             <li>Rake</li>
             <li>Ruby on Rails</li>
             <li>Underscore</li>
-        </ul>
-
+          </ul>
 
         <p><table>
           <tr>
             <td>
-               <img src="./images/BuddyBeats_ready.png" width="400" height="270"/>
+               <img src="assets/images/BuddyBeats_ready.png" width="400" height="270"/>
             </td>
             <td>
-              <img src="./images/BuddyBeats_ready2.png" width="400" height="270"/>
+              <img src="assets/images/BuddyBeats_ready2.png" width="400" height="270"/>
             </td>
           </tr>
           <tr>
             <td>
-              <img src="./images/BuddyBeats3_c.png" width="400" height="270"/>
+              <img src="assets/images/BuddyBeats3_c.png" width="400" height="270"/>
             </td>
             <td>
-              <img src="./images/BuddyBeats_ready4.png" width="400" height="270"/>
+              <img src="assets/images/BuddyBeats_ready4.png" width="400" height="270"/>
             </td>
           </tr>
           <tr>
-            <th colspan="2"><a href="http://192.241.174.8/" target="_blank">Live Site</a> | <a href="http://github.com/swdelaney2/buddybeats" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;</th>
+            <th colspan="2"><a href="http://github.com/swdelaney2/buddybeats" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;</th>
           </tr>
         </table>
-          <p><a class="close" href="#Projects">Close</a>
-  </div>
+        <p><a class="close" href="#Projects">Close</a>
+      </div>
 
   <div class="copychef_expand_content">
-    <a class="close" href="#Projects"><img src="./images/x-icon1.gif" id="x_icon"></a>
+    <a class="close" href="#Projects"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
     <p><h1>CopyChef</h1>
       <p><a href="http://copychef.herokuapp.com" target="_blank">CopyChef</a> is a site for gathering copycat recipes of the dishes from your favorite restaurants.
         <p>My biggest challenge on this project was the search bar, but it paid off. The search utilizes auto-complete and searches by three fields (restaurant, name of dish and tags), while avoiding duplicate listings. For example, if you type in Panera, auto-complete will not suggest Panera three times for each recipe.
@@ -136,22 +125,22 @@
 
       <p><table>
         <tr>
-          <td><img src="./images/CopyChef-2_b.png" width="400" height="270"/></td>
-          <td><img src="./images/CopyChef-3.png" width="400" height="270"/></td>
+          <td><img src="assets/images/CopyChef-2_b.png" width="400" height="270"/></td>
+          <td><img src="assets/images/CopyChef-3.png" width="400" height="270"/></td>
         </tr>
         <tr>
-          <th colspan="2"><img src="./images/CopyChef-5.png" width="400"></th>
+          <th colspan="2"><img src="assets/images/CopyChef-5.png" width="400"></th>
         </tr>
 
         <tr>
-          <th colspan="2"><a href="http://copychef.herokuapp.com" target="_blank">Live Site</a> | <a href="http://github.com/copychef/copychef" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;</th>
+          <th colspan="2"><a href="http://github.com/copychef/copychef" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;</th>
         </tr>
       </table>
   <p><a class="close" href="#Projects">Close</a>
 </div>
 
 <div class="runningm8_expand_content">
-  <a class="close" href="#Projects"><img src="./images/x-icon1.gif" id="x_icon"></a>
+  <a class="close" href="#Projects"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
   <p><h1>RunningM8</h1>
     <p><a href="http://104.236.214.136" target="_blank">RunningM8</a> is a marathon training site. It was my first foray into setting up and managing databases. I handled the entire back-end and enjoyed creating all of the site's logic.
       <p>The biggest challenge was working with date objects and rendering data/views based on the current date, but I managed to find solutions.
@@ -167,15 +156,15 @@
       </ul>
     <p><table>
       <tr>
-        <td><img src="./images/Running_M8.png" width="400" height="270"/></td>
-        <td><img src="./images/Running_M8-2b.png" width="400" height="270"/></td>
+        <td><img src="assets/images/Running_M8.png" width="400" height="270"/></td>
+        <td><img src="assets/images/Running_M8-2b.png" width="400" height="270"/></td>
       </tr>
       <tr>
-        <th colspan="2"><img src="./images/Running_M8-3.png" width="400"></th>
+        <th colspan="2"><img src="assets/images/Running_M8-3.png" width="400"></th>
       </tr>
 
       <tr>
-        <th colspan="2"><a href="http://104.236.214.136" target="_blank">Live Site</a> | <a href="http://github.com/senateOrphans/runningM8" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;</th>
+        <th colspan="2"><a href="http://github.com/senateOrphans/runningM8" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;</th>
       </tr>
     </table>
   <p><a class="close" href="#Projects">Close</a>
@@ -226,10 +215,9 @@
         </tr>
       </table>
       <p><div class="container">
-        For more information, please download my <a href="./files/Delaney_Resume_02.08.16.pdf" target="_blank">resume</a> or visit my <a href="https://profiles.generalassemb.ly/profiles/stephen-delaney" target="_blank">General Assembly profile</a>.
+        For more information, please download my <a href="assets/files/Delaney_Resume_02.08.16.pdf" target="_blank">resume</a>.
       </div>
     </div>
-
 
     <div id="contact_div">
       <a id="Contact"></a>
@@ -238,10 +226,6 @@
       <p>I am currently seeking full-time employment. Feel free to reach out to me:
       <p><a href="mailto:swdelaney2@gmail.com" target="_top">swdelaney2@gmail.com</a></div>
     </div>
-
-
-
-
 
   </body>
 </html>

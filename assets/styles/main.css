@@ -40,9 +40,10 @@ th {
   margin-left: auto;
   margin-right: auto;
   height: 608px;
-  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.3) 0%, rgba(239, 239, 239, 0.3) 100%), url(/images/insta.jpg);}
-
-
+  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.3) 0%, rgba(239, 239, 239, 0.3) 100%), url(../images/insta.jpg);
+  background-size: cover;
+  background-position: top;
+}
 
 div {
   margin-bottom: -25px;
@@ -54,21 +55,32 @@ div {
   height: auto;
 }
 
+#work_div {
+  padding-top: 2em;
+  height: 900px;
+  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(../images/insta2.jpg);
+  background-size: cover;
+}
+
 #projects_div {
   padding-top: 2em;
   height: 900px;
-  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(/images/insta2.jpg);
+  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(../images/insta3.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 #skills_div {
   padding-top: 2em;
-    background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(/images/insta5.jpg);
-    background-position: bottom;
+  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.7) 0%, rgba(239, 239, 239, 0.7) 100%), url(../images/insta4.jpg);
+  background-position: bottom;
+  background-size: cover;
 }
 
 #contact_div {
   padding-top: 100px;
-    background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(/images/insta3.jpg);
+  background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5) 0%, rgba(239, 239, 239, 0.5) 100%), url(../images/insta5.jpg);
+  background-size: cover;
 }
 
 h1 {
@@ -94,15 +106,6 @@ a {
   padding: 1em;
 }
 
-/*li {
-  display: inline;
-}*/
-
-/*ul {
-    list-style-position: inside;
-}*/
-
-
 /*POP UPS BELOW*/
 
 #x_icon {
@@ -124,9 +127,6 @@ cursor: pointer;
   border:1px solid #999999;
   cursor:default;
   display:none;
-  /*margin-top: 15px;
-  position:absolute;
-  text-align:left;*/
   width:85%;
   height: 90%;
   margin-left: auto;
