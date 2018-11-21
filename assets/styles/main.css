@@ -117,7 +117,7 @@ cursor: pointer;
 }
 
 
-.buddybeats_expand_content, .copychef_expand_content, .runningm8_expand_content, .skokie_expand_content {
+.content {
   position: fixed;
   margin-top: 15px;
   top: 0;
