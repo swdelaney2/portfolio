@@ -19,6 +19,30 @@ $('.close').click(function(){
   $('.content').hide()
 });
 
+$(".next").click(function(){
+  var current_content = $(".content:visible").first();
+  var index = $(".content").index(current_content);
+  var next_content = $(".content").eq(index + 1);
+
+  if (next_content.length == 0) {
+    var next_content = $(".content").eq(0);
+  }
+
+  current_content.hide();
+  next_content.show();
+})
+
+
+$(".prev").click(function(){
+  var current_content = $(".content:visible").first();
+  var index = $(".content").index(current_content);
+  var previous_content = $(".content").eq(index - 1);
+
+  current_content.hide();
+  previous_content.show();
+})
+
+
 
 
 
