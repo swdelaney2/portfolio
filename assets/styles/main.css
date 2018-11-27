@@ -249,7 +249,11 @@ figure:hover img{
           transform: scale3d(1.2, 1.2, 1);
 }
 
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (max-width: 975px) {
   figure{
