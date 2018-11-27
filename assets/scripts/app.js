@@ -50,14 +50,21 @@ $(".prev").click(function(){
 
 $(document).keyup(function(e) {
   var project_content = $(".content:visible").first().hasClass("project_content")
-  if (project_content) {
-    window.location.replace("#Projects");
-  } else {
-    window.location.replace("#Work");
-  }
-
 
   if (e.keyCode == 27) {
-  $('.content').hide();
+    $('.content').hide();
+    if (project_content) {
+      window.location.replace("#Projects");
+    } else {
+      window.location.replace("#Work");
+    }
+   }
+
+   if (e.keyCode == 37) {
+     $(".prev:visible").click()
+   }
+
+   if (e.keyCode == 39) {
+     $(".next:visible").click()
    }
  });
