@@ -6,10 +6,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-table {
-  display:inline-table;
-}
-
 #skills_list {
   margin-left: -20px;
 }
@@ -253,6 +249,11 @@ figure:hover img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.table_center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 975px) {

@@ -109,11 +109,13 @@
         <div class="arrows next"></div>
         <a class="close" href="#intranet_expand"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
         <p><h1>Staff Intranet</h1>
-        <p>Intranettt.... During my tenure at the library, I have worked on the following:
+        <p>At the library, we have a one-stop Intranet for all internal staff needs. During my tenure at the library, I have worked on the following:
         <ul>
           <li>Overseen an upgrade from Django 1.5 to 1.11</li>
           <li>Upgraded from Python 2.7 to Python 3</li>
-          <li>stuff</li>
+          <li>Created a circulation analytics dashboard, which pulls data from our catalog vendor's database and provides monthly or custom stats (along with bar charts from Chart.js)</li>
+          <li>Built a FAQ app, where staff can easily add or find up-to-date information</li>
+          <li>Built a conference request application, which handles all forms and staff approval proccesses</li>
         </ul>
 
         <p><strong>Technologies Used:</strong>
@@ -137,14 +139,25 @@
         <div class="arrows next"></div>
         <a class="close" href="#ctis_expand"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
         <p><h1>Coming Together</h1>
-        <p>Description.
+        <p>Coming Together in Skokie and Niles Township is an annual cultural festival that celebrates the community's diversity. Each year, the site is refreshed with the new theme, events and selected books. As an example, you may view the sites for <a href="http://comingtogether.in/2017/" target="_blank">2017</a> and <a href="http://comingtogether.in/2018/" target="_blank">2018</a>.
 
         <p><strong>Technologies Used:</strong>
           <ul>
-            <li>Django</li>
+            <li>Jekyll</li>
+            <li>Python</li>
+            <li>SASS</li>
           </ul>
 
-          <p><img src="assets/images/ctis.png" width="400" class="center">
+          <p><table class="table_center">
+            <tr>
+              <td>
+                 <img src="assets/images/ctis.png" width="400" height="270"/>
+              </td>
+              <td>
+                <img src="assets/images/ctis2.png" width="400" height="270"/>
+              </td>
+            </tr>
+          </table>
 
         <p><a class="close" href="#ctis_expand">Close</a>
       </div>
@@ -154,14 +167,9 @@
         <div class="arrows next"></div>
         <a class="close" href="#muslims_expand"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
         <p><h1>Muslims of Skokie</h1>
-        <p>Description.
+        <p>As part of Coming Together 2018, Skokie Public Library created an exhibit titled <a href="https://skokielibrary.github.io/muslims-of-skokie/" target="_blank">Muslims of Skokie</a>, featuring portraits and stories from local residents. After viewing the exhibit in our lobby, I decided to make an accompanying virtual exhibit.
 
-        <p><strong>Technologies Used:</strong>
-          <ul>
-            <li>Django</li>
-          </ul>
-
-          <p><img src="assets/images/muslims.png" width="400" class="center">
+        <p><img src="assets/images/muslims.png" width="400" class="center">
 
         <p><a class="close" href="#muslims_expand">Close</a>
       </div>
@@ -171,14 +179,20 @@
         <div class="arrows next"></div>
         <a class="close" href="#index_expand"><img src="assets/images/x-icon1.gif" id="x_icon"></a>
         <p><h1>Newspaper and Obituary Index</h1>
-        <p>Description.
+        <p>I built the <a href="https://skokienewspaperindex.com/" target="_blank">Skokie Newspaper Index</a> and <a href="https://skokieobituaries.com/" target="_blank">Obituary Index</a> from scratch to host our digital collections. The sites uses server side processing with DataTables, a jQuery plug-in, to deliver fast search results. The Newspaper Index also includes a tagging feature, so users can browse related stories.</p>
+        <p>These sites have staff controls for adding or editing entries. Before this site was built, our collection lived on ContentPro, an Innovative product. The data was exported in CSV format. I cleaned and formatted the data to load it into the new database. I also wrote a custom script to parse and create the tags.</p>
 
         <p><strong>Technologies Used:</strong>
           <ul>
             <li>Django</li>
+            <li>Django-datatables-view</li>
+            <li>Django-taggit</li>
+            <li>jQuery UI</li>
+            <li>jQuery DataTables</li>
+            <li>Python 3</li>
           </ul>
 
-          <p><img src="assets/images/index.png" width="400" class="center">
+        <p><img src="assets/images/index.png" width="400" class="center">
 
         <p><a class="close" href="#index_expand">Close</a>
       </div>
@@ -234,7 +248,7 @@
             <li>Underscore</li>
           </ul>
 
-        <p><table>
+        <p><table class="table_center">
           <tr>
             <td>
                <img src="assets/images/BuddyBeats_ready.png" width="400" height="270"/>
@@ -278,7 +292,7 @@
           <li>Underscore</li>
       </ul>
 
-      <p><table>
+      <p><table class="table_center">
         <tr>
           <td><img src="assets/images/CopyChef-2_b.png" width="400" height="270"/></td>
           <td><img src="assets/images/CopyChef-3.png" width="400" height="270"/></td>
@@ -311,7 +325,7 @@
           <li>Ruby</li>
           <li>Sinatra</li>
       </ul>
-    <p><table>
+    <p><table class="table_center">
       <tr>
         <td><img src="assets/images/Running_M8.png" width="400" height="270"/></td>
         <td><img src="assets/images/Running_M8-2b.png" width="400" height="270"/></td>
@@ -333,7 +347,7 @@
       <a id="Skills"></a>
       <h1>Skills</h1>
     <p>
-      <table>
+      <table class="table_center">
         <tr>
           <td style="text-align:center"><strong>Core Languages Learned:</strong></td>
           <td></td>
