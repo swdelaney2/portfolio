@@ -141,7 +141,9 @@ cursor: pointer;
   text-align: center;
 }
 
-
+a.expand {
+  text-decoration: none;
+}
 
 
 /*http://codepen.io/larrygeams/pen/dBDLh*/
