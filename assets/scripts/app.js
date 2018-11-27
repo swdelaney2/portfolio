@@ -49,15 +49,13 @@ $(".prev").click(function(){
 }); // end of onload
 
 $(document).keyup(function(e) {
-  var project_content = $(".content:visible").first().hasClass("project_content")
+  var visible_content = $(".content:visible").first()
+  var current_id = visible_content[0]["id"]
+  current_id = current_id.replace("_content", "")
 
   if (e.keyCode == 27) {
     $('.content').hide();
-    if (project_content) {
-      window.location.replace("#Projects");
-    } else {
-      window.location.replace("#Work");
-    }
+    window.location.replace("#" + current_id);
    }
 
    if (e.keyCode == 37) {
